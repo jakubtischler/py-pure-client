@@ -27,9 +27,9 @@ copyright = u'2023, Pure Storage, Inc.'
 author = u'Pure Storage, Inc.'
 
 # The short X.Y version
-version = u'1.44'
+version = u'1.49'
 # The full version, including alpha/beta/rc tags
-release = u'1.44.0'
+release = u'1.49.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -72,7 +72,9 @@ exclude_patterns = [
     u'_build',
     'Thumbs.db',
     '.DS_Store',
-# FlashArray
+    # be careful if you want to modify list below,
+    # without those exclusions readthedocs will die due to OOM
+    # FlashArray
     'source/*.FA_2_0.*',
     'source/*.FA_2_1.*',
     'source/*.FA_2_2.*',
@@ -90,7 +92,7 @@ exclude_patterns = [
     'source/*.FA_2_14.*',
     'source/*.FA_2_15.*',
     'source/*.FA_2_16.*',
-#    'source/*.FA_2_17.*',
+    'source/*.FA_2_17.*',
     'source/*.FA_2_18.*',
     'source/*.FA_2_19.*',
     'source/*.FA_2_20.*',
@@ -101,20 +103,24 @@ exclude_patterns = [
     'source/*.FA_2_25.*',
     'source/*.FA_2_26.*',
     'source/*.FA_2_27.*',
-#    'source/*.FA_2_28.*',
-# FlashBlade
+    'source/*.FA_2_28.*',
+    'source/*.FA_2_29.*',
+    'source/*.FA_2_30.*',
+    #    'source/*.FA_2_31.*',
+    # FlashBlade
     'source/*.FB_2_0.*',
     'source/*.FB_2_1.*',
     'source/*.FB_2_2.*',
     'source/*.FB_2_3.*',
-#    'source/*.FB_2_4.*',
+        #    'source/*.FB_2_4.*',
     'source/*.FB_2_5.*',
     'source/*.FB_2_6.*',
     'source/*.FB_2_7.*',
-#    'source/*.FB_2_8.*',
+        #    'source/*.FB_2_8.*',
     'source/*.FB_2_9.*',
     'source/*.FB_2_10.*',
-#    'source/*.FB_2_11.*',
+    'source/*.FB_2_11.*',
+    #    'source/*.FB_2_12.*',
 ]
 
 # The name of the Pygments (syntax highlighting) style to use.
